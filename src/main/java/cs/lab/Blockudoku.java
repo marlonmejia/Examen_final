@@ -5,6 +5,7 @@ import java.util.logging.Logger;
 
 public class Blockudoku {
     static final Logger logger = Logger.getLogger(Blockudoku.class.getName());
+    public boolean test=true;
     Scanner scanner= new Scanner(System.in);
     public int score=0;
     boolean [][]board=new boolean[9][9];
@@ -29,6 +30,9 @@ public class Blockudoku {
         boolean []fillblock= new boolean[9];
         if(verifymove(piece,x,y)){
            Insertpiece(piece,x,y);
+        }
+        else {
+            test=false;
         }
 
     }
