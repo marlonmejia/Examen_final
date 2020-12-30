@@ -39,8 +39,8 @@ public class Blockudoku {
     }
     public void Insertpiece(Piece piece, int x, int y){
         int temp=x-2;
-        for (int i=x;i<x;i++){
-            for(int j=y;j<y;j++){
+        for (int i=0;i<x;i++){
+            for(int j=0;j<y;j++){
                 board[y][temp]=piece.getPieces()[i][j];
                 temp++;
             }
