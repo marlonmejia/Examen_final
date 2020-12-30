@@ -34,6 +34,7 @@ public class Blockudoku {
         else {
             test=false;
         }
+        assignscore(row,colum,fillblock);
 
     }
     public void Insertpiece(Piece piece, int x, int y){

@@ -1,4 +1,5 @@
 package cs.lab;
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class Piece {
@@ -9,7 +10,7 @@ public class Piece {
                 pieces[i][j]=false;
             }
         }
-        Random r= new Random();
+        Random r= new SecureRandom();
         int value;
         value=r.nextInt((8-1)+1)+1;
         switch (value){
